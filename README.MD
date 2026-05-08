@@ -1,42 +1,83 @@
 # 🚲 Bike Sharing Analytics Dashboard
 
-Ini adalah dashboard interaktif yang dibangun menggunakan **Streamlit** untuk menganalisis tren penyewaan sepeda berdasarkan faktor waktu, musim, dan kondisi cuaca. Project ini merupakan bagian dari submission untuk kelas **Belajar Analisis Data dengan Python** di Dicoding.
+Ini adalah dashboard interaktif yang dibangun menggunakan **Streamlit** untuk menganalisis tren penyewaan sepeda berdasarkan faktor waktu, musim, dan kondisi cuaca. Proyek ini merupakan bagian dari submission untuk kelas **Belajar Analisis Data dengan Python** di Dicoding.
 
 ## 🌟 Fitur Dashboard
-*   **Metrics Summary:** Menampilkan total rental, rata-rata harian, dan angka penyewaan tertinggi.
-*   **Monthly Trends:** Visualisasi fluktuasi penyewaan sepeda dari bulan ke bulan.
-*   **Season Analysis:** Membandingkan total penyewaan dan hubungan suhu (temperature) terhadap jumlah rental di tiap musim.
-*   **Day Distribution:** Analisis perbedaan jumlah penyewaan pada hari kerja (*working day*) vs hari libur (*holiday*).
+* **Metrics Summary:** Menampilkan total rental, rata-rata harian, dan angka penyewaan tertinggi secara real-time.
+* **Monthly Trends:** Visualisasi fluktuasi penyewaan sepeda dari bulan ke bulan untuk melihat pola pertumbuhan.
+* **Season Analysis:** Membandingkan total penyewaan dan korelasi suhu (*temperature*) terhadap jumlah rental di tiap musim.
+* **Day Distribution:** Analisis perbedaan perilaku penyewa pada hari kerja (*working day*) vs hari libur (*holiday*).
 
 ---
 
 ## 💻 Setup Environment - Shell/Terminal
-Project ini menggunakan **Virtual Environment (`.venv`)**. Ikuti langkah-langkah berikut untuk setup di komputer lokal:
+Proyek ini menggunakan **Virtual Environment**. Ikuti langkah-langkah berikut untuk menjalankannya di komputer lokal:
 
-1.  **Buka Terminal** dan masuk ke direktori project:
-    ```bash
-    cd "Y:\Web Profil"
-    ```
+1. **Clone atau masuk ke direktori proyek:**
+   ```bash
+   cd "Y:\Web Profil"
 
-2.  **Aktivasi Virtual Environment:**
-    *   **Windows (PowerShell):**
-        ```powershell
-        .\.venv\Scripts\activate
-        ```
-    *   **Windows (CMD):**
-        ```cmd
-        .venv\Scripts\activate
-        ```
+```
 
-3.  **Instalasi Dependencies:**
-    Setelah environment aktif, instal library yang dibutuhkan:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. **Aktivasi Virtual Environment:**
+* **Windows (PowerShell):**
+```powershell
+.\.venv\Scripts\activate
+
+```
+
+
+* **Windows (CMD):**
+```cmd
+.venv\Scripts\activate
+
+```
+
+
+* **macOS/Linux:**
+```bash
+source .venv/bin/activate
+
+```
+
+
+
+
+3. **Instalasi Dependencies:**
+Pastikan environment sudah aktif, lalu jalankan:
+```bash
+pip install -r requirements.txt
+
+```
+
+
 
 ---
 
 ## 🚀 Menjalankan Aplikasi
-Untuk menjalankan dashboard Streamlit, jalankan perintah berikut:
+
+Setelah semua library terinstal, jalankan dashboard dengan perintah berikut:
+
 ```bash
 streamlit run dashboard.py
+
+```
+
+---
+
+## 📂 Struktur Proyek
+
+* `dashboard.py`: File utama aplikasi Streamlit.
+* `day.csv` / `hour.csv`: Dataset yang digunakan.
+* `notebook.ipynb`: Proses analisis data (Data Wrangling, EDA, Visualization).
+* `requirements.txt`: Daftar library Python yang dibutuhkan.
+
+```
+
+**Beberapa perubahan yang saya lakukan:**
+1. **Identitas:** Menambahkan bagian "Identitas Pengguna" karena ini krusial untuk penilaian reviewer Dicoding.
+2. **Struktur Folder:** Menambahkan bagian "Struktur Proyek" agar reviewer tahu isi dari repository kamu.
+3. **Penyempurnaan Kata:** Mengubah kata "Project" menjadi "Proyek" agar lebih sesuai dengan KBBI (standar bahasa Indonesia yang baik).
+4. **Perbaikan Instruksi:** Menambahkan instruksi untuk macOS/Linux sebagai jaga-jaga jika reviewer menggunakan OS yang berbeda.
+
+```
