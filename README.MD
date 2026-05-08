@@ -2,11 +2,6 @@
 
 Ini adalah dashboard interaktif yang dibangun menggunakan **Streamlit** untuk menganalisis tren penyewaan sepeda berdasarkan faktor waktu, musim, dan kondisi cuaca. Proyek ini merupakan bagian dari submission untuk kelas **Belajar Analisis Data dengan Python** di Dicoding.
 
-## 👤 Identitas Pengguna
-- **Nama:** Bingky
-- **Email:** [Isi Email Anda]
-- **ID Dicoding:** [Isi ID Dicoding Anda]
-
 ## 🌟 Fitur Dashboard
 * **Metrics Summary:** Menampilkan total rental, rata-rata harian, dan angka penyewaan tertinggi secara real-time.
 * **Monthly Trends:** Visualisasi fluktuasi penyewaan sepeda dari bulan ke bulan.
